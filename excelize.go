@@ -143,6 +143,12 @@ func (f *File) setDefaultTimeStyle(sheet, axis string, format int) error {
 	return err
 }
 
+// WorkSheetReader provides a function to get the pointer to the structure
+// after deserialization by given worksheet name.
+func (f *File) WorkSheetReader(sheet string) (xlsx *xlsxWorksheet, err error) {
+	return f.workSheetReader(sheet)
+}
+
 // workSheetReader provides a function to get the pointer to the structure
 // after deserialization by given worksheet name.
 func (f *File) workSheetReader(sheet string) (xlsx *xlsxWorksheet, err error) {
