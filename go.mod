@@ -1,6 +1,8 @@
-module github.com/360EntSecGroup-Skylar/excelize/v2
+module github.com/Splizard/excelize/v2
 
 go 1.12
+
+replace github.com/360EntSecGroup-Skylar/excelize/v2 => ./
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
